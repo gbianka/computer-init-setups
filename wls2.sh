@@ -74,7 +74,7 @@ ssh-keygen -o -a 100 -t ed25519
 ### Em seguida, pediu um passfrase, eu digitei minha passfrase ver no meu computador _PESSOAL lá por dentro tem um arquivo que vai ter o que coloquei
 ### FALTA: Levar a CHAVE PÚBLICA LÁ PARA O GITHUB/BITBUCKET
 
-# SSH Keychain: https://esc.sh/blog/ssh-agent-windows10-wsl2/
 
+# SSH Keychain: https://esc.sh/blog/ssh-agent-windows10-wsl2/    [Server para não ter que ficar sempre informando a senha quando for interagir com o repositório git]
 echo -e '/usr/bin/keychain -q --nogui $HOME/.ssh/id_ed25519' >> ~/.bashrc
 echo -e 'source $HOME/.keychain/$HOST-sh\n' >> ~/.bashrc
